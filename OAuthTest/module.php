@@ -6,7 +6,7 @@
 		
 		//This one needs to be available on our OAuth client backend.
 		//Please contact us to register for an identifier: https://www.symcon.de/kontakt/#OAuth
-		private $oauthIdentifer = "test";
+		private $oauthIdentifer = "google_nest";
 		//private $oauthIdentifer = "test_staging";
 
 		//You normally do not need to change this
@@ -153,6 +153,7 @@
 			$this->SetBuffer("AccessToken", json_encode(Array("Token" => $Token, "Expires" => $Expires)));
 			
 			//Return current Token
+			SetValueString(13567,$Token);
 			return $Token;
 			
 		}
