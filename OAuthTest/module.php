@@ -37,6 +37,7 @@
 		public function Register() {
 			
 			//Return everything which will open the browser
+			IPS_LogMessage('OAUTH',"https://".$this->oauthServer."/authorize/".$this->oauthIdentifer."?username=".urlencode(IPS_GetLicensee()));
 			return "https://".$this->oauthServer."/authorize/".$this->oauthIdentifer."?username=".urlencode(IPS_GetLicensee());
 			
 		}
