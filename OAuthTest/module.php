@@ -37,7 +37,7 @@
 		public function Register() {
 			
 			//Return everything which will open the browser
-			//IPS_LogMessage('OAUTH',"https://".$this->oauthServer."/authorize/".$this->oauthIdentifer."?username=".urlencode(IPS_GetLicensee()));
+			IPS_LogMessage('OAUTH'," Step 1 ");
 			//return "https://".$this->oauthServer."/authorize/".$this->oauthIdentifer."?username=".urlencode(IPS_GetLicensee());
 			return "https://nestservices.google.com/partnerconnections/f779e361-a2e1-43ef-8ffd-dfd46d3e69ab/auth?redirect_uri=https://www.google.com&access_type=offline&prompt=consent&client_id=711562689556-m7ovuunile982dnno0pi10hgavp0rj2r.apps.googleusercontent.com&response_type=code&scope=https://www.googleapis.com/auth/sdm.service";
 			
